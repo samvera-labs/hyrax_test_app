@@ -1,3 +1,5 @@
+require_relative '../../app/middleware/disable_animations_in_test_environment'
+
 Rails.application.configure do
   config.middleware.use DisableAnimationsInTestEnvironment
   # Settings specified here will take precedence over those in config/application.rb.
